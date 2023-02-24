@@ -6,9 +6,17 @@
 int main()
 {
 	printf("Size of a char:%ld  byte(s)", sizeof(char));
-/*Size of an int: 4 byte(s)
-Size of a long int: 4 byte(s)
-Size of a long long int: 8 byte(s)
-Size of a float: 4 byte*/
+
+
+        printf("Size of an int: %ld  byte(s)", sizeof(int));
+
+
+	printf("Size of a long int: %ld  byte(s)", sizeof(long int));
+
+
+	printf("Size of a long : %ld  byte(s)", sizeof(long));
+
+
+	printf("Size of a float: %ld  byte(s)", sizeof(float));
 	return 0;
 }
