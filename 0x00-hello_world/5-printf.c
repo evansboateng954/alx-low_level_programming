@@ -2,6 +2,8 @@
 /**
  * Main - Entry Point
  *
+ * Description: This program writes a text to the stdout
+ *
  * Return:Always 0 (success)
  */
 int main(void)
