@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * Main - Entry Point
+ *main - Entry Point
  *
  * Description: print size of various data types
  *
