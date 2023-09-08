@@ -1,6 +1,6 @@
 #include<stdio.h>
 /**
- * Main - Entry Point
+ *main - Entry Point
  *
  * Description: This program writes a text to the stdout
  *
