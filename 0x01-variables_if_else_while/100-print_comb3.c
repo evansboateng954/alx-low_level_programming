@@ -22,8 +22,10 @@ int main(void)
 				if (i == 8 && j == 9)
 					;
 				else
-				putchar (',');
-				putchar (' ');
+				{
+					putchar (',');
+					putchar (' ');
+				}
 			}
 		}
 	}
