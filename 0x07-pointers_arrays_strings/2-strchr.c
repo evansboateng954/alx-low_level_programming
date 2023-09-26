@@ -1,6 +1,6 @@
 #include "main.h"
-/** 
- * _strchr finds the first occurence of a given chracter
+/**
+ * _strchr - finds the first occurence of a given chracter
  * @s: the string to search for
  * @c: the character to search for
  * Return: on success (s)
