@@ -1,20 +1,19 @@
-#include "main.h"
-#include <stdio.h>
+#include "dog.h"
 /**
  * print_dog - prints dog
  * @d: pointer to a dog
  * Return: nothig is returned
  */
-print_dog(struct dog *d)
+void print_dog(struct dog *d)
 {
-	if (d->name == NULL && d->age == NULL && d->owner == NULL)
+	if (d->name == NULL && d->age == 0 && d->owner == NULL)
 		printf(" ");
 	else if (d->name == NULL)
 		printf("Name: (nil)");
-	else if (d->age == NULL)
+	else if (d->age == 0)
 		printf("Age: (nil)");
 	else if (d->owner == NULL)
 		printf("Owner: (nil)");
 	else
-		printf("Name: %s \n Age: %f \n Owner: %s", d->name, d->age, d->owner);
+		printf("Name: %s \n Age: %f \n Owner: %s\n", d->name, d->age, d->owner);
 }
