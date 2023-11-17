@@ -2,7 +2,9 @@
 /**
  * main - Entry point
  * This program prints its name
- * Return: 0 is returned
+ * Return: 1 is returned
+ * @argc: argument count
+ * @argv: argument vector
  */
 int main(int __attribute__((unused)) argc, char *argv[])
 {
