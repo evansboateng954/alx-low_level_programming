@@ -30,7 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	rd = read(STDIN_FILENO, ch, letters);
+	rd = read(fd, ch, letters);
 	if (rd < 0)
 	{
 		free(ch);
@@ -39,15 +39,15 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 /* write a character at a time */
 
-	while ((fd = write(STDIN_FILENO, &ch[i], 1)) > 0)
+	while ((fd = write(STDOUT_FILENO, &ch[i], 1)) > 0)
 	{
 		i++;
-		if (fd < 0)
-		{
-			free(ch);
-			close(fd);
-			return (0);
-		}
+	}
+	if (fd < 0)
+	{
+		free(ch);
+		close(fd);
+		return (0);
 	}
 	free(ch);
 	return (i);
