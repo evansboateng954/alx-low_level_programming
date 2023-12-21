@@ -35,10 +35,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		free(ch);
 		close(fd);
+		return (0);
 	}
 
 /* write a character at a time */
-
 	while ((fd = write(STDOUT_FILENO, &ch[i], 1)) > 0)
 	{
 		i++;
