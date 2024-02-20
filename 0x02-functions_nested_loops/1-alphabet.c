@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - Entry point
- * Return: 0
+ * print_alphabet - prints alphabets in lowercase
+ * Return: void
  */
-int main(void)
+void print_alphabet(void)
 {
 	int i;
 
@@ -13,5 +13,4 @@ int main(void)
 		_putchar (i);
 	}
 	_putchar ('\n');
-	return (0);
 }
